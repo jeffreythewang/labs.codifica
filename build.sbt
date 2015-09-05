@@ -6,7 +6,11 @@ scalaVersion := "2.11.6"
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
-resolvers += "Sonatype Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots/"
+resolvers ++= Seq(
+  "Sonatype Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots/",
+  "Typesafe repository" at "https://repo.typesafe.com/typesafe/releases/",
+  "Scala-Tools Maven2 Snapshots Repository" at "http://scala-tools.org/repo-snapshots"
+)
 
 libraryDependencies ++= Seq(
   "javax.inject"       % "javax.inject"        % "1",
