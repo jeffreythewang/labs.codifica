@@ -4,4 +4,4 @@ resolvers += "Typesafe repository" at "http://repo.typesafe.com/typesafe/release
 
 addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.3.9")
 
-addSbtPlugin("com.github.ddispaltro" % "sbt-reactjs" % "0.5.0")
+addSbtPlugin("io.teamscala.sbt" % "sbt-babel" % "1.0.1")

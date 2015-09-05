@@ -1,10 +1,22 @@
+import WebJs.JS
+
 name := "labs"
 
 version := "0.1-SNAPSHOT"
 
 scalaVersion := "2.11.6"
 
-lazy val root = (project in file(".")).enablePlugins(PlayScala)
+lazy val root = (project in file(".")).enablePlugins(PlayScala, SbtWeb)
+
+JsEngineKeys.engineType := JsEngineKeys.EngineType.Node
+
+BabelKeys.options := WebJs.JS.Object(
+  "stage" -> 2,
+  "comments" -> false,
+  "modules" -> "common"
+)
+
+scalacOptions += "-target:jvm-1.8"
 
 resolvers ++= Seq(
   "Sonatype Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots/",

@@ -22,7 +22,7 @@ object Application extends Controller {
       engine.eval("var global = this;")
       engine.eval("var console = {error: print, log: print, warn: print};")
 
-      engine.eval(new FileReader("target/web/web-modules/main/webjars/lib/react/react-with-addons.js"))
+      engine.eval(new FileReader("target/web/node-modules/main/webjars/react-tools/react-with-addons.js"))
       engine.eval(new FileReader("target/web/public/main/js/App.js"))
       Ok(views.html.index())
     }
