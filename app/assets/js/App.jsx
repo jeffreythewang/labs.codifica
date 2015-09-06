@@ -2,24 +2,26 @@ class Method extends React.Component {
   render() {
     return (
       <div className="Method">
-        <h1>{this.props.type}</h1>
+        <h1>{this.props.name}</h1>
       </div>
     );
   }
 }
 
 Method.propTypes = {
-  type: React.PropTypes.string
+  name: React.PropTypes.string,
 };
 
 class MethodContainer extends React.Component {
   render() {
     return (
       <div className="MethodContainer">
-        <Method type={'Aeropress'}/>
-        <Method type={'French Press'} />
-        <Method type={'V60'} />
-        <Method type={'Chemex'} />
+        <Method name={'Aeropress'}/>
+        <Method name={'French Press'} />
+        <Method name={'V60'} />
+        <Method name={'Chemex'} />
+        <Method name={'Kalita'} />
+        <Method name={'Cold Brew'} />
       </div>
     );
   }
@@ -30,7 +32,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>Codifica Labs</h1>
-        <p>brief description of codifica labs goes here</p>
+        <p>We at Codifica have been experimenting with different home brewing processes. With each bag of beans we get our hands on comes a different palette of roasting notes. Extracting these flavors involves a variety of processes. It has become our pleasure to report our findings in our journey throughout fourth wave coffee.</p>
         <MethodContainer />
       </div>
     );
