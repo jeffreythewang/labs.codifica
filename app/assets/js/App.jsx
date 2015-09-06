@@ -32,7 +32,9 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>Codifica Labs</h1>
-        <p>We at Codifica have been experimenting with different home brewing processes. With each bag of beans we get our hands on comes a different palette of roasting notes. Extracting these flavors involves a variety of processes. It has become our pleasure to report our findings in our journey throughout fourth wave coffee.</p>
+        <div className="header">
+          <p>We at Codifica have been experimenting with different home brewing processes. With each bag of beans we get our hands on comes a different palette of roasting notes. Extracting these flavors involves a variety of processes. It has become our pleasure to report our findings in our journey throughout fourth wave coffee.</p>
+        </div>
         <MethodContainer />
       </div>
     );
