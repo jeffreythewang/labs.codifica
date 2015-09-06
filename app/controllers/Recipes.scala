@@ -35,7 +35,7 @@ class Recipes extends Controller with MongoController {
 
   def getRecipes(recipeType: String) = Action.async {
     val cursor: Cursor[Recipe] = collection.
-      find(Json.obj("type" -> recipeType)).
+      find(Json.obj("method" -> recipeType)).
       cursor[Recipe]
 
     val futureRecipesList: Future[List[Recipe]] = cursor.collect[List]()

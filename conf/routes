@@ -1,5 +1,9 @@
 GET   /                       controllers.Application.index
 
+# API Routes
+GET   /recipes/:method        @controllers.Recipes.getRecipes(method: String)
+POST  /recipe/create          @controllers.Recipes.createRecipe
+
 GET   /assets/*file           controllers.Assets.at(path="/public", file)
 
 GET   /webjars/*file          controllers.WebJarAssets.at(file)
