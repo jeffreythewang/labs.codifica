@@ -1,19 +1,39 @@
-var Method = React.createClass({
-  render: () => (
-    <h1>hello world</h1>
-  )
-});
+class Method extends React.Component {
+  render() {
+    return (
+      <div className="Method">
+        <h1>{this.props.type}</h1>
+      </div>
+    );
+  }
+}
 
 Method.propTypes = {
-  root: React.PropTypes.object
+  type: React.PropTypes.string
 };
 
-var App = React.createClass({
-  render: () => (
-    <div className="main">
-      <h1>Codifica Labs</h1>
-      <p>brief description of codifica labs goes here</p>
-    </div>
-  )
-});
+class MethodContainer extends React.Component {
+  render() {
+    return (
+      <div className="MethodContainer">
+        <Method type={'Aeropress'}/>
+        <Method type={'French Press'} />
+        <Method type={'V60'} />
+        <Method type={'Chemex'} />
+      </div>
+    );
+  }
+}
+
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <h1>Codifica Labs</h1>
+        <p>brief description of codifica labs goes here</p>
+        <MethodContainer />
+      </div>
+    );
+  }
+}
 
