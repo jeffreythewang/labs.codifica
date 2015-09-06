@@ -49,4 +49,15 @@ class Recipes extends Controller with MongoController {
     }
   }
 
+  def updateRecipe(author: String, recipeType: String) = Action.async(parse.json) { request =>
+    request.body.validate[Recipe].map {
+      recipe =>
+        val nameSelector = Json.obj("author" -> author, "method" -> recipeType)
+        collection.update(nameSelector, recipe).map {
+          lastError =>
+            logger.debug(s"Successfully updated with LastError: $lastError")
+            Created(s"Recipe updated")
+        }
+    }.getOrElse(Future.successful(BadRequest("invalid json")))
+  }
 }

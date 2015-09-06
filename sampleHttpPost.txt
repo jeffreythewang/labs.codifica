@@ -1,1 +1,0 @@
-curl -H "Content-Type: application/json" -X POST -d '{"author":"Ritual","method":"aeropress","relative_img_path":"","grind_setting":9,"beans_weight":17,"water_weight":270,"tasting_notes":"good","directions":"press"}' http://localhost:9000/recipe/create

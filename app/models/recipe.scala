@@ -7,7 +7,6 @@ case class RecipeList(method: String, list: Seq[Recipe])
 case class Recipe(
   author: String,
   method: String,
-  relative_img_path: String,
   grind_setting: Int,
   beans_weight: Int,
   water_weight: Int,
