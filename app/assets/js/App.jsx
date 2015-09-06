@@ -2,7 +2,7 @@ class Method extends React.Component {
   render() {
     return (
       <div className="Method">
-        <h1>{this.props.name}</h1>
+        <h2>{this.props.name}</h2>
       </div>
     );
   }
