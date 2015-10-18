@@ -4,6 +4,9 @@ GET   /                       controllers.Application.index
 GET   /api/recipes/:method    @controllers.Recipes.getRecipes(method: String)
 POST  /api/recipe/create      @controllers.Recipes.createRecipe
 
+# Backend Routes
+GET   /recipes/view/all       @controllers.Recipes.viewAll
+
 GET   /assets/*file           controllers.Assets.at(path="/public", file)
 
 GET   /webjars/*file          controllers.WebJarAssets.at(file)

@@ -1,5 +1,7 @@
 package controllers
 
+import data._
+import models.Recipe
 import play.modules.reactivemongo.MongoController
 import play.modules.reactivemongo.json.collection.JSONCollection
 import reactivemongo.api.Cursor
@@ -19,10 +21,15 @@ class Recipes extends Controller with MongoController {
 
   def collection: JSONCollection = db.collection[JSONCollection]("recipes")
 
+  val recipesAll = Aeropress.recipes ++ Kalita.recipes
 
   // case classes + JSON writes and reads
   import models._
   import models.JsonFormats._
+
+  def viewAll = Action {
+    Ok(views.html.recipes.viewAll(recipesAll))
+  }
 
   def createRecipe = Action.async(parse.json) { request =>
     request.body.validate[Recipe].map { recipe =>

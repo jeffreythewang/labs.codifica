@@ -1,0 +1,19 @@
+@(recipesAll : Seq[Recipe])
+  <h1>All our recipes are here.</h1>
+
+  @recipesAll.map { recipe =>
+    <div class="recipe">
+      <div class="key-value-row">Author : @recipe.author</div>
+      <div class="key-value-row">Method : @recipe.method</div>
+      <div class="key-value-row">Grind Setting : @recipe.grind_setting</div>
+      <div class="key-value-row">Beans Weight : @recipe.beans_weight</div>
+      <div class="key-value-row">Water Weight : @recipe.water_weight</div>
+      <div class="key-value-row">Tasting Notes : @recipe.tasting_notes</div>
+      <ol>
+        @recipe.directions.map { direction =>
+          <li>@direction</li>
+        }
+      </ol>
+    </div>
+  }
+  </ul>
