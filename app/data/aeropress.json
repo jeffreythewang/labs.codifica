@@ -1,0 +1,27 @@
+[
+	{"author":"Ritual","method":"Aeropress","grind_setting":9,"beans_weight":17,"water_weight":225,"tasting_notes":"Bold, Concentrated",
+		"directions":[
+			"Bring filtered water to a boil.",
+			"Place filter into the bottom of the brewing chamber, place aeropress over mug, rinse with hot water, and discard rinse water.",
+			"Put ground coffee on top of the filter in the brewing chamber.",
+			"Slowly pour 225 grams of water onto the grounds.",
+			"Use a spoon to slowly paddle slurry front to back & left to right.",
+			"Place a plunger into the chamber pushing in and slowly lifting up, creating a vacuum seal.",
+			"Carefully take the aeropress and mug off the scale.",
+			"At 1 minute plung for 25 seconds, for a total brew time of 1:25-1:30 minutes.",
+			"Stir and enjoy!"
+		]
+	},
+
+	{"author":"Stumptown","method":"Aeropress","grind_setting":9,"beans_weight":17,"water_weight":220,"tasting_notes":"Bold, Concentrated",
+		"directions":[
+			"Measure and grind 17g of coffee - one rounded AeroPress spoonful or about 2.5 Tablespoons. Grind the coffee about as fine as table salt",
+			"Get the AeroPress ready to brew by placing the filter in the basket. Next, preheat the brewer and rinse the filter with hot water. This gets rid of any paper flavor and warms everything up. Heat up your mug with hot water while you’re at it.",
+			"Discard the rinse water from your mug. Affix the basket to the bottom of the brew chamber and place it on top of the mug. If it’s handy, use the funnel (or coffee loader) that comes with the AeroPress to add 17g of coffee. Then, remove the funnel.",
+			"Start your timer when you pour hot water (just off the boil or about 205°F) into your brewer. Saturate all the grounds within 10 seconds. Pour to the No. 4 or 220g of water if you’re using a scale. Spin the chamber, making sure all the coffee is saturated.",
+			"Once you hit the No. 4, stir the “slurry” (coffee and water mixture) and place the plunger on the brew chamber and pull up slightly to create a pressure seal. Don’t plunge yet!",
+			"At 1:15, remove the pressure seal and give the slurry another stir with a spoon or paddle. Put the plunger back on and gently press down with steady pressure, stopping as soon as you hear a hissing sound. This entire brew process should take just under two minutes and yield seven to eight ounces of coffee.",
+			"The AeroPress is easy to clean. Simply take off the basket and pop out the coffee grounds and filter. Clean the rubber plunger with hot kettle water and you’re ready for your next brew."
+		]
+	}
+]
