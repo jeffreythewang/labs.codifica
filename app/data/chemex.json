@@ -1,0 +1,27 @@
+[
+  {"author":"Ritual","method":"Chemex","grind_setting":24,"beans_weight":45,"water_weight":700,"tasting_notes":"Airy, Floral",
+    "directions":[
+      "Bring filtered water to a boil.",
+      "Rinse the paper filter with hot water, and discard rinse water.",
+      "Add the ground coffee to filter.",
+      "Bloom: Add 100 grams of water, then use a spoon and gently fold the bottom of the brew bed onto the top, fully saturating the grounds.",
+      "First pour: At 0:45 seconds, add 300 grams of water.",
+      "Second pour: At 2:30 slowly add 300 grams, making sure not to fill higher than the level of grounds already established. Then grab a spoon and gently scrape along the edge of the filter at the top of the brew, being sure not to touch the brew bed.",
+      "Your coffee should finish brewing around 4:30 minutes.",
+      "Gently swirl the Chemex carafe to ensure you have a well-mixed brew.",
+      "Pour into mugs for you and a friend and enjoy!"
+    ]
+  },
+
+  {"author":"Stumptown","method":"Chemex","grind_setting":24,"beans_weight":42,"water_weight":700,"tasting_notes":"Airy, Floral",
+    "directions":[
+      "Place the Chemex Filter in the brewer with single fold away from the spout and multiple folds lined up against the spout. Rinse the filter with hot water to get a nice even seal all the way around. This preheats the brewer and gets rid of any paper flavor from the filter. Dump the rinse water and fold the filter toward the spout to reinforce this area.",
+      "Add 42g or about 6 Tablespoons of coffee ground kind of like Kosher salt. Center the coffee in your brewer and zero out the scale.",
+      "Start the timer when you add the hot water. Pour until all the grounds are saturated or until you reach about 150g. Stir with a chopstick or spoon to make sure there are no dry clumps.",
+      "At :45, start the second pour, making sure to reintegrate the coffee and water. Pour with a wiggling motion, then a gentle spiral until the volume reaches about a fingertip down from the top of the rim or 450g of water. Pour over the dark spots and avoid the light ones.",
+      "At 1:45, fill the brewer flush to the top or about 700g of water.",
+      "At 4:00, you should be pretty close to volume. Look at the glass bubble or belly button, which indicates 20 ounces. Lift the filter. It’s okay to hover for a couple of seconds to make sure you have enough volume. Then pull the filter out completely and let it drain into the sink.",
+      "Swirl the Chemex around a little and you’re ready to serve two cups of brewed coffee."
+    ]
+  }
+]
